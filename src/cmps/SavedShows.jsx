@@ -57,6 +57,7 @@ export default function SavedShows() {
                                 </p> 
                                 <p onClick={(ev)=>{ deleteShow(ev, item?.id)}} className='absolute text-gray-300 top-4 right-4 hover:text-white'><AiOutlineClose/></p>   
                             </div> 
+                            <p onClick={(ev)=>{ deleteShow(ev, item?.id)}} className='block md:hidden absolute text-gray-300 top-4 right-4 hover:text-white'><AiOutlineClose/></p>   
                         </div>
                     ))}
                 </div>

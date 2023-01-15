@@ -4,13 +4,14 @@ import Main from '../cmps/Main'
 import Movie from '../cmps/Movie'
 import Row from '../cmps/Row'
 import requests from '../Requests'
+import Grid from '../cmps/Grid'
 
 
 export default function Home({ movies }) {
-
     const getRandomMovie = () => {
         if (!movies) return
-        return movies[Math.floor(Math.random() * movies?.length)]
+        const moviesForPreview = movies.slice(0,30)
+        return moviesForPreview[Math.floor(Math.random() * moviesForPreview?.length)]
     }
 
     const moviesToShow = useSelector(state=>state.movieModule.moviesToShow)
@@ -32,6 +33,7 @@ export default function Home({ movies }) {
                 :
                 <>
                     <Row rowId='6' title="Results" movies={moviesToShow} />
+                    {/* <Grid title={'Results'} movies={moviesToShow}></Grid> */}
                 </>
             }
         </>

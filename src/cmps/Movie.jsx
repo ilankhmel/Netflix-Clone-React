@@ -54,6 +54,10 @@ export default function Movie({item}) {
                         {like ? <FaHeart className='absolute top-4 left-4 text-gray-300 hover:text-white' /> : <FaRegHeart className='absolute top-4 left-4 text-gray-300  hover:text-white' />}
                     </p>
                 </div>
+        
+                    <p onClick={(ev)=>saveShow(ev)} className={`block md:hidden z-20`}>
+                        {like ? <FaHeart className='absolute top-4 left-4 text-gray-400' /> : <FaRegHeart className='absolute top-4 left-4 text-gray-400 ' />}
+                    </p>
             </div>
         // </Link>
 
