@@ -1,5 +1,7 @@
 Responsive Netflix Clone App written in React, using Tailwind CSS and Firebase (self learned).
 
+Github Pages link - https://ilankhmel.github.io/netflix-clone-react/#/
+
 A netflix clone allows the user to sign up and add to Liked Movies list, using Firebase database and backend.
 
 The user can search for movies, read about them in the Movie Details page and watch the movie trailer, that we get with Youtube's API.
